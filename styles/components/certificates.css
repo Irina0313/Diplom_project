@@ -1,0 +1,22 @@
+.certificates__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; 
+    flex-wrap: wrap;
+}   
+.certificates__row img{
+    margin: 15px;
+    max-width: 360px;
+}    
+.certificates__row img:hover{
+    transform: scale(1.5);
+    z-index: 500;
+}
+@media all and (max-width : 1190px){
+    .certificates__row{
+         justify-content: center;
+    }     
+    .certificates__row img{
+        padding: 15px;
+    } 
+}       

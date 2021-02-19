@@ -1,0 +1,401 @@
+/*Блок Project*/
+.project{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+.swiper-container{
+    width: 65.8%;
+}
+.swiper-wrapper{
+    width: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: 830px;
+    position: relative;
+    background-size: cover;
+}
+.slide_one{
+    background-image: url(../../images/projects/projekt_nurtown.jpg);
+}
+.slide_two{
+    background-image: url(../../images/projects/our_projects/parking_img.jpg);
+}
+.slide_three{
+    background-image: url(../../images/projects/our_projects/project_4.jpg);
+}
+.slide_four{
+    background-image: url(../../images/projects/our_projects/project_3.jpg);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: "";
+}
+.project-menu__arow:hover{
+  background-color:lightslategray;
+}
+.project-menu__name{
+  position: relative;
+  top: 40%;
+  width: 34.2%;
+}
+.project-menu__arows{
+    display: flex;
+    position: relative;
+    margin-top: 73px;
+    width: 100%;
+}
+.project-menu__arow{
+    padding: 16.5px 16px;
+    margin-right: 23px;
+    border: 1px solid #F2F2F2;
+    background-color:  #FFFFFF;
+}
+.project-menu__number,
+.swiper-pagination-fraction{
+    font-size: 24px;
+    color: #BDBDBD;
+    display: flex;
+    position: relative;
+    margin-top: 93px;
+    max-width: 124px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+.project-menu__number-right{
+margin-left: 83px;
+} 
+.project-menu__number-left  {
+    padding-right: 14px;
+}
+.project-img__href{
+    border:lightgrey solid 1px;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    z-index: 400;
+}
+.about{
+    display: flex;
+    margin-bottom: 120px;
+}
+.about__images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    justify-content: space-between;
+    width: 59.8%;
+    box-sizing: border-box;
+    padding: 0 15px 0 85px;
+}
+.about__img{
+    padding: 0 15px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+.about__img_left img{
+    width: 100%;
+} 
+.about__img_left img:first-of-type{
+    padding-bottom: 30px;
+}
+.about__img_left{
+    display: flex;
+    flex-direction: column;
+}
+.about__img_right img{
+    padding-top: 30px;
+    width: 100%;
+} 
+.about__company{
+    width: 40.2%;
+    position: relative;
+}
+.about__img{
+    width: 100%;
+}
+.about__href{
+    position: relative;
+}
+.about__company .article{
+    margin: 20px 0;
+    height: 46%;
+    line-height: 25px;
+}
+/*Goals*/
+.main-goals{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.main-goals__row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.main-goals__col{
+    display: flex;
+    width: 48.7%;
+}
+.main-goals__col span{
+    font-size: 180px;
+    color: #F2F2F2;
+    font-weight: 700;
+    margin-right: 45px;
+    line-height: 1;
+}
+.main-goals__col .article{
+    font-size: 22px;
+    line-height: 36px;
+}
+/*Our projects*/
+.our-projects{
+    position: relative;
+    margin-bottom: 120px;
+}
+.our-projects .button-gray{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transition: 2s;
+}
+.our-progects__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 45px 0 75px 0;
+}
+.our-progects__container img{
+    margin: 15px 0;
+    width: 100%;
+}
+.our-progects__img{
+    position: relative;
+}
+.our-progects__active{
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    background-color: #333333;
+    width: 100%;
+    height: calc(100% - 30px);
+    transition: 1s;
+}  
+.our-progects__img h2{
+    opacity: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    font-size: 50px;
+}
+.our-progects__img .button{
+    opacity: 0;
+    position: absolute;
+    background-color: transparent;
+    top: 60%;
+    left: 14%;
+    max-width: 100%;
+    justify-content: flex-start;
+}  
+.our-progects__img:hover h2{
+    opacity: 1;
+}   
+.our-progects__img:hover .button{
+    opacity: 1;
+}
+.our-progects__img:hover .our-progects__active{
+    opacity: 0.8;
+}
+/*Форма обратной связи*/
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form__row{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.form__table{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 36%;
+    padding-right: 30px;
+}
+.form__table textarea{
+    padding-top: 10px;
+}    
+.form__input {
+    border: none;
+    margin-top: 10px;
+    background-color: #F3F3F3;
+    min-height: 46px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+    box-sizing: border-box;
+}
+.form__img{
+    width: 64%;
+    background-image: url(../../images/projects/form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form__footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.form__footer .form__table .article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox {
+	position:relative;
+	padding-left:24px;
+    margin: 22px 0;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:" ";
+	display:block;
+	height:24px;
+	width:24px;
+	outline:none;
+    background-color:  #F3F3F3;
+	position:absolute;
+	top: 10%;
+	left:0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:none;
+	border:none;
+	width:24px;
+	height:24px;
+	background-color:  #F3F3F3;
+    content: "";
+    background-image: url("../../images/elements/check.svg");
+    background-repeat: no-repeat;
+    background-size: auto; 
+    background-position: center;
+}
+.form__footer{
+    width: 100%;
+}
+.form__footer .form__table .article label{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-left: 10px;
+}  
+.form__table .button-gray input{
+    background-color: #333333;
+    color:  #FFFFFF;
+    text-decoration: none;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+@media all and (max-width : 1170px) {
+    .our-progects__container {
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .our-progects__img{
+        margin: 0 15px;
+    }  
+}    
+@media all and (max-width : 980px) {
+    .project{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .project-img{
+        width: 100%;
+    }
+    .project-menu{
+        min-height: 0px;
+        width: 100%;
+    }
+    .project-menu__name {
+        position: relative;
+        top: 0%;
+        width: 100%;
+    }
+    .swiper-container{
+         width: 100%;
+    }
+    .swiper-slide{
+        height: 600px;
+    }
+    .project-menu__arows {
+        margin-top: 30px;
+    }
+    .project-menu__number {
+        margin: 30px 0;
+    }
+    .about{
+    margin-bottom: 30px;
+    }
+    .about {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    }
+    .about__company{
+        width: 100%;
+    } 
+    .about__images {
+        width: 100%;
+        padding: 15px 15px;
+    }
+    .main-goals__row {
+        justify-content: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .main-goals__col {
+        width: 100%;
+    } 
+    .form__table{
+        padding-right: 0;
+        width: 100%;
+    } 
+    .form__img{
+        display: none;
+    }
+    .form__footer{
+        margin-bottom: 30px;
+    }
+    .main-goals__col .article {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .main-goals__col span {
+        font-size: 90px;
+    }
+    .main-goals__col span {
+        margin-right: 15px;    
+    }
+}

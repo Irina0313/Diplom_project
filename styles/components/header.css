@@ -1,0 +1,99 @@
+.header__row{
+    max-width: 1170px;
+    min-height: 102px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.logo__header{
+    width: 34.2%;
+    display: inline-flex;
+}
+.navigation{
+    width: 65.8%;
+    padding-right: 59px;
+}
+.navigation__item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+} 
+.navigation ul{
+    padding-left: 0;
+}     
+.navigation__link{
+    text-transform: uppercase;
+    list-style-type: none;
+    letter-spacing: 0.2em;
+}
+.navigation__link a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+.navigation__link:hover a{
+   border-top: solid #000 1px;
+   border-bottom: solid #000 1px;
+   padding: 4px 0;
+}
+.burger {
+    width: 30px;
+    display: none;
+}
+.burger span{
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: block;
+    transition: .25s ease-out;
+}
+.burger span:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+.burger-modal {
+    position: absolute;
+    max-width: 300px;
+    min-height: 100px;
+    width: 100%;
+    padding: 0 15px;
+    right: 0%;
+    top: 10%;
+    opacity: 0;
+    transition: 1.5s ease-out;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.-is-burger-modal-opened .burger span:nth-child(1) {
+    transform: translate(0, 9px) rotate(45deg);
+}
+.-is-burger-modal-opened .burger span:nth-child(2) {
+    opacity: 0;
+}
+.-is-burger-modal-opened .burger span:nth-child(3) {
+    transform: translate(0, -9px) rotate(-45deg);
+}
+.burger-modal .link-active{
+    margin-bottom: 15px;
+}   
+.-is-burger-modal-opened .burger-modal {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}   
+@media all and (max-width : 825px) {
+    .burger {
+        display: block;
+    }
+    .navigation__item{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0;
+    } 
+}

@@ -1,0 +1,116 @@
+.contacts__row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 124px;
+    width: 100%;
+}
+.contacts__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 40%;
+    padding-right: 30px;
+}
+.contacts__map{
+    width: 60%;
+}
+.contacts__map img{
+    width: 100%;
+}
+.contacts__container .title,
+.contacts__container .article{
+    margin-bottom: 45px;
+}
+.contacts__container .article{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+} 
+.modal {
+	position: fixed;
+    max-width: 469px;
+    height: 590px;
+    width: 100%;
+    padding: 28px 39px;
+    left: 50%;
+    top: 50%;
+    transform:  scale(0.5) ;
+    opacity: 0;
+    transition: .5s linear;
+    z-index: 10;
+    background-color: white;
+}    
+
+.form__title{
+    position: relative;
+}
+.modal__content .subtitle{
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #333333;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.form__input{
+    padding-left: 20px;
+    width: 100%;
+}
+.modal__content .form__table {
+    width: 100%;
+    margin: 0;
+}
+.button-feedback{
+    width: 100%;
+}
+.form__close {
+    width: 14px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+.form__close span{
+    border-bottom: 1px solid #C1C1C1;
+    width: 100%;
+    display: block;
+    transition: .25s ease-out;
+}
+.form__close span:first-of-type{
+    transform: translate(0, 1px) rotate(45deg) ;
+}
+.form__close span:last-of-type{
+    transform: rotate(-45deg) ;
+}      
+.-is-modal-opened .modal{
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+}
+.contacts__map iframe{
+    width: 100%;
+    height: 100%;
+}
+  @media all and (max-width : 1170px) {
+    .contacts__row{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    .contacts__container{
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contacts__map{
+        width: 100%;
+        min-height: 300px;
+    }
+    .contacts__container .title,
+    .contacts__container .article{
+        margin-bottom: 25px;
+    }
+}
+
+  
