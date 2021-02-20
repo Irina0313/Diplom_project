@@ -59,7 +59,7 @@
     width: 100%;
     padding: 0 15px;
     right: 0%;
-    top: 10%;
+    top: 100px;
     opacity: 0;
     transition: 1.5s ease-out;
     z-index: 10;
